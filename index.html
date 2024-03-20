@@ -13,7 +13,7 @@
 	</ul>
 	<script>
 		const lista = document.querySelector("ul");
-		let nombre = document.createElement("li");
+		
 	
 		
 		fetch("prueba.txt")
@@ -22,6 +22,7 @@
 			let nombres = contenido.split(",");
 
 			for(let i= 0; i < nombres.length; i++){
+				let nombre = document.createElement("li");
 				nombre.innerText = nombres[i];
 				lista.appendChild(nombre);
 			}
