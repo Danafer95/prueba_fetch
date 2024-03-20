@@ -14,12 +14,11 @@
 	<script>
 		const lista = document.querySelector("ul");
 		
-	
-		
 		fetch("prueba.txt")
 		.then(respuesta => respuesta.text())
 		.then(contenido => {
-			let nombres = contenido.split(",");
+
+			let nombres = contenido.split(",").sort();
 
 			for(let i= 0; i < nombres.length; i++){
 				let nombre = document.createElement("li");
