@@ -1,0 +1,11 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	font-family:monospace;
+	padding: 5%;
+	background-color: mediumpurple;
+	color:black;
+}
