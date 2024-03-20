@@ -14,16 +14,18 @@
 	<script>
 		const lista = document.querySelector("ul");
 		let nombre = document.createElement("li");
+	
 		
 		fetch("prueba.txt")
 		.then(respuesta => respuesta.text())
 		.then(contenido => {
-			let nombres = contenido.split();
+			let nombres = contenido.split(",");
 
 			for(let i= 0; i < nombres.length; i++){
 				nombre.innerText = nombres[i];
 				lista.appendChild(nombre);
 			}
+			
 		})
 
 	</script>
